@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Apayaaa</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <!-- ================= Question Screen ================= -->
+
+<section id="questionScreen">
+
+    <div class="question-content">
+
+        <h1>😍</h1>
+
+        <h2>Haiii sayangkuu 🤍</h2>
+
+        <p>
+            Kamu ingat ga hari ini hari apa?
+        </p>
+
+        <button id="rememberBtn">
+            🤍 Aku ingat kok!
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Quiz Screen ================= -->
+
+<section id="quizScreen" class="hidden">
+
+    <div class="quiz-content">
+
+        <h2 id="quizTitle">Tebak-tebakan #1 👀</h2>
+
+        <p id="quizQuestion">
+            Coba tebak... siapa yang paling spesial hari ini? 👀
+        </p>
+
+        <div class="quiz-options" id="quizOptions">
+
+            <button class="quizOption" data-answer="A">
+                A. Aku 🙇🏻‍♀️
+            </button>
+
+            <button class="quizOption" data-answer="B">
+                B. Kamu 🫵
+            </button>
+
+            <button class="quizOption" data-answer="C">
+                C. Bubul 🐱
+            </button>
+
+        </div>
+
+        <p id="quizMessage"></p>
+
+        <button id="quizNext" class="hidden">
+            Lanjut → 🫶
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= OPENING ================= -->
+
+<section id="opening">
+
+<div class="stars"></div>
+
+<div class="opening-box">
+
+<h1>
+
+Dibuat khusus untuk kamu,<br>
+
+dari hatiku ke hatimu 🫶
+
+</h1>
+
+<button id="startBtn">
+
+🌹 Ayo mulaii
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= SPLASH ================= -->
+
+<section id="splash" class="hidden">
+
+<div class="glass">
+
+<h3>Made Especially For</h3>
+
+<h1>Mas Kesayangan ❤️</h1>
+
+<p>08 September 2026</p>
+
+</div>
+
+</section>
+
+<!-- ================= PASSWORD ================= -->
+
+<section id="login" class="hidden">
+
+<div class="glass">
+
+<h2>
+
+🔒 Sebelum Dibuka...
+
+</h2>
+
+<p>
+
+Masukkan password dulu yaa 🤍
+
+</p>
+
+<p class="hint">
+
+💡 Tanggal awal kita kenal
+
+</p>
+
+<div id="passwordDots">
+
+○ ○ ○ ○ ○ ○
+
+</div>
+
+<div class="keypad">
+
+<button class="num">1</button>
+<button class="num">2</button>
+<button class="num">3</button>
+
+<button class="num">4</button>
+<button class="num">5</button>
+<button class="num">6</button>
+
+<button class="num">7</button>
+<button class="num">8</button>
+<button class="num">9</button>
+
+<button id="deleteBtn">
+
+⌫
+
+</button>
+
+<button class="num">
+
+0
+
+</button>
+
+<button id="enterBtn">
+
+💝
+
+</button>
+
+</div>
+
+<p id="error"></p>
+
+</div>
+
+</section>
+
+<!-- ================= POPUP ================= -->
+
+<section id="popup" class="hidden">
+
+<div class="glass">
+
+<h2>🤍</h2>
+
+<p>
+
+Haiii Sayang akuu...
+
+<br><br>
+
+Aku ada sesuatu buat kamu.
+
+<br><br>
+
+Semoga kamu suka yaa ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= LOADING ================= -->
+
+<section id="loading" class="hidden">
+
+<div class="glass">
+
+<h2 id="loadingText">
+
+Loading...
+
+</h2>
+
+<div class="loadingBar">
+
+<div id="progressBar"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hidden">
+
+<audio id="music" loop>
+
+<source src="takeachancewithme.mp3" type="audio/mp3">
+
+</audio>
+
+<div class="container">
+
+<h1>
+
+Happy Birthday
+
+</h1>
+
+<h2>
+
+Mas Akyy ❤️
+
+</h2>
+
+<button id="giftBtn">
+
+🎁 Buka Hadiah
+
+</button>
+
+<div id="giftContent" class="hidden">
+  
+  <!-- ================= Amplop ================= -->
+
+<div id="envelopeSection">
+
+<div class="envelope" id="envelope">
+
+<div class="flap"></div>
+
+<div class="letter-paper"></div>
+
+</div>
+
+<p id="openEnvelope">
+
+Klik di sini sayangg🙆🏻‍♀️
+
+</p>
+
+</div>
+
+<!-- ================= Surat ================= -->
+
+<div id="letterSection" class="hidden">
+
+<div class="letter-card">
+
+<div id="letter">
+
+<p>Selamat ulang tahun sayangku...🤍</p>
+
+<p>Semoga di umur kamu yang ke-21 tahun ini, semua doa dan impian kamu satu per satu bisa tercapai.</p>
+
+<p>Terima kasih karena udah selalu sabar mengadepin aku, terima kasih juga karena selalu ada buat aku.</p>
+
+<p>Aku bersyukur banget bisa kenal sama kamu, entah gimana kehidupan aku kalo waktu itu aku ga ketemu sama kamu, dan semoga kita masih punya banyak cerita indah ke depannya.</p>
+
+<p>Jangan lupa jaga kesehatan yaa, jangan sering begadang, makan yang teratur, dan semoga Tuhan selalu melindungi setiap langkah kamu.</p>
+
+<p>Aku bangga sama semua usaha yang udah kamu lakuin, semua tindakan kamu aku hargai. Semangat terus ya sayang.🤍</p>
+
+<p>Walaupun aku keliatan ga peduli sama apapun yang kamu lakuin, tapi percayalah aku selalu perhatiin hal hal kecil dari diri kamu. Entah itu masalah kamu, cerita sehari hari kamu, aku seneng banget denger itu semua yang keluar dari mulut kamu🫶</p>
+
+<p>I hope in another life aku bisa ngerasain lagi cinta terbesar seperti yang kamu kasih ke aku😻😻 </p>
+
+<p>Jangan pernah nyerah sama hubungan kita ya?🙁 aku selalu berharap kita bisa bertahan selamanya, aku selalu berharap hubungan kita bisa berjalan sampe ke jenjang yang lebih serius</p>
+
+<p>Jadi.. ayo perjuangin hubungan ini bareng bareng, walaupun banyak rasa sakitnya, banyak salah pahamnya, semoga masalah masalah yang datang ke hubungan kita cuma ujian tuhan buat ngeliat keseriusan kita, dan kesetiaan kita💗🫶</p>
+
+<p>I love you more than yesterday, and I'll keep loving you tomorrow too. 🤍</p>
+
+<p><b>Dengan sayang,</b><br>Anyaa 🤍</p>
+
+</div>
+
+<p id="afterLetter" class="hidden">
+
+🤍 Terima kasih udah mau membaca sampai akhir... Aku berharap segalanya yang terbaik untuk kamu🤍
+
+</p>
+
+<button id="galleryBtn" class="hidden">
+
+📸 Mau lihat cowo tampan ga?
+
+</button> 
+</div> <!-- .letter-card -->
+</div> <!-- #letterSection -->
+
+<!-- ================= Galeri ================= -->
+
+<div id="gallerySection" class="hidden">
+
+<h2>
+
+📸 Cowo tampan akuu🤍
+
+</h2>
+
+<div class="gallery">
+
+<img src="foto1.jpg" alt="Foto 1">
+
+<img src="foto2.jpg" alt="Foto 2">
+
+<img src="foto3.jpg" alt="Foto 3">
+
+<img src="foto4.jpg" alt="Foto 4">
+
+<img src="foto5.jpg" alt="Foto 5">
+
+<img src="foto6.jpg" alt="Foto 6">
+
+<img src="foto7.jpg" alt="Foto 7">
+
+<img src="foto8.jpg" alt="Foto 8">
+
+</div>
+
+<!-- ================= Voice Note ================= -->
+
+<div id="voiceSection">
+
+    <div class="voice-box">
+
+        <h2>🎙️ Satu Pesan Terakhir Buat Kamu</h2>
+
+        <p>Kalau kamu udah sampai di sini...</p>
+
+        <p>
+            Berarti kamu udah berhasil sampai di akhir
+            hadiah kecil yang aku buat. 🤍
+        </p>
+
+        <p>Pencet play kalau kamu udah siap yaa...</p>
+
+        <audio controls>
+            <source src="voiceee.opus" type="audio/ogg">
+        </audio>
+
+        <p>🎧 Dengerin sampai selesai yaa...</p>
+
+    </div>
+
+</div>
+
+<!-- ================= Bouquet ================= -->
+
+<div class="bouquet">
+
+🫶🌷
+
+</div>
+
+<!-- ================= Footer ================= -->
+
+<div class="footer">
+
+<p>Made with 🤍</p>
+
+<p>
+
+by someone<br>
+
+who loves you<br>
+
+very much.
+
+</p>
+
+<p>
+
+08 September 2026
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
