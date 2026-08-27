@@ -1,0 +1,738 @@
+/* ==========================================
+   HAPPY BIRTHDAY MAS AKY ❤️
+   STYLE.CSS PART 1
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#5b0f1c,#7b2748,#bfdfff);
+    color:#fff;
+    overflow-x:hidden;
+    min-height:100vh;
+}
+
+.hidden{
+    display:none !important;
+}
+
+.fade{
+    animation:fadeUp .8s ease;
+}
+
+section{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.glass{
+    width:100%;
+    max-width:430px;
+    background:rgba(255,255,255,.13);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    text-align:center;
+}
+
+/* ================= Pertanyaan Hari Ini ================= */
+
+#todayQuestion{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:30vh;
+    width:100%;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+#todayQuestion p{
+    font-size:22px;
+    font-weight:bold;
+    line-height:1.6;
+    margin:0;
+}
+
+/* ================= Opening ================= */
+
+#opening{
+    position:relative;
+    overflow:hidden;
+}
+
+.stars{
+    position:absolute;
+    inset:0;
+}
+
+.stars::before{
+    content:"✨ ✦ ✨ ✦ ✨ ✦ ✨";
+    position:absolute;
+    width:100%;
+    top:15%;
+    text-align:center;
+    font-size:24px;
+    animation:twinkle 2.5s infinite;
+}
+
+.opening-box{
+    z-index:2;
+    text-align:center;
+}
+
+.opening-box h1{
+    font-family:'Great Vibes',cursive;
+    font-size:52px;
+    line-height:1.5;
+    margin-bottom:40px;
+}
+
+#startBtn{
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#6b1d2c;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#startBtn:hover{
+    transform:scale(1.05);
+}
+
+/* ================= Splash ================= */
+
+#splash h1{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    margin:15px 0;
+}
+
+#splash h3{
+    color:#ffe8ef;
+}
+
+#splash p{
+    margin-top:15px;
+}
+
+/* ================= Password ================= */
+
+#login h2{
+    margin-bottom:15px;
+}
+
+.hint{
+    margin:20px 0;
+    color:#ffe0ea;
+}
+
+#passwordDots{
+    font-size:30px;
+    letter-spacing:8px;
+    margin:20px 0 25px;
+}
+
+.countkeypad{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.keypad button{
+    height:60px;
+    border:none;
+    border-radius:16px;
+    background:rgba(255,255,255,.18);
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.keypad button:active{
+    transform:scale(.92);
+}
+
+#error{
+    margin-top:18px;
+    min-height:24px;
+    color:#ffd4d4;
+    font-weight:600;
+}
+
+/* ================= Popup ================= */
+
+#popup p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ================= Loading ================= */
+
+.loadingBar{
+    width:100%;
+    height:12px;
+    background:rgba(255,255,255,.18);
+    border-radius:30px;
+    overflow:hidden;
+    margin-top:25px;
+}
+
+#progressBar{
+    width:0;
+    height:100%;
+    background:white;
+    border-radius:30px;
+}
+
+/* ================= Home ================= */
+
+.container h1{
+    font-family:'Great Vibes',cursive;
+    font-size:58px;
+    margin-bottom:10px;
+}
+
+.container h2{
+    margin-bottom:25px;
+    color:#ffe8ef;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#6b1d2c;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* ================= Amplop ================= */
+
+#envelopeSection{
+    margin-top:40px;
+    text-align:center;
+}
+
+.envelope{
+    width:220px;
+    height:140px;
+    background:white;
+    margin:auto;
+    border-radius:12px;
+    position:relative;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+.envelope:hover{
+    transform:scale(1.05);
+}
+
+.flap{
+    position:absolute;
+    width:100%;
+    height:70px;
+    background:#ffd8e5;
+    clip-path:polygon(0 0,100% 0,50% 100%);
+    transition:.6s;
+}
+
+.letter-paper{
+    position:absolute;
+    width:85%;
+    height:110px;
+    background:white;
+    left:7.5%;
+    top:20px;
+    border-radius:8px;
+}
+
+#openEnvelope{
+    margin-top:20px;
+    font-weight:bold;
+    animation:blink 1.8s infinite;
+}
+
+/* ================= Surat ================= */
+
+#letterSection{
+    margin-top:35px;
+}
+
+.letter-card{
+    background:#fff;
+    color:#444;
+    border-radius:20px;
+    padding:25px;
+    text-align:left;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.letter-card h2{
+    text-align:center;
+    color:#6b1d2c;
+    margin-bottom:20px;
+}
+
+#letter{
+    font-size:15px;
+    line-height:1.9;
+    white-space:pre-line;
+}
+
+#letter p{
+
+    margin-bottom:18px;
+
+    line-height:2;
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    transition:all .8s ease;
+
+}
+
+#letter p:last-child{
+
+    margin-bottom:0;
+
+}
+
+#letter p.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+#afterLetter{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    font-style:italic;
+
+    color:#777;
+
+}
+
+#galleryBtn{
+    display:block;
+    margin:30px auto 0;
+}
+
+/* ================= Gallery ================= */
+
+#gallerySection{
+    margin-top:45px;
+}
+
+.gallery{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding-bottom:10px;
+}
+
+.gallery::-webkit-scrollbar{
+    display:none;
+}
+
+.gallery img{
+    width:220px;
+    height:280px;
+    object-fit:cover;
+    border-radius:18px;
+    flex:none;
+    transition:.35s;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* ================= Bouquet ================= */
+
+.bouquet{
+    font-size:55px;
+    margin:40px 0;
+}
+
+/* ================= Footer ================= */
+
+.footer{
+    margin-top:45px;
+    text-align:center;
+    font-size:14px;
+    line-height:1.8;
+    opacity:.85;
+}
+
+/* ================= Music ================= */
+
+#musicBtn{
+    position:fixed;
+    top:18px;
+    right:18px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(10px);
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    z-index:999;
+}
+
+/* ================= Sakura ================= */
+
+.petal{
+    position:fixed;
+    top:-40px;
+    pointer-events:none;
+    z-index:999;
+}
+
+/* ================= Love ================= */
+
+.love{
+    position:fixed;
+    bottom:-40px;
+    pointer-events:none;
+    z-index:999;
+}
+
+/* ================= Animation ================= */
+
+@keyframes blink{
+
+    50%{
+        opacity:.4;
+    }
+
+}
+
+@keyframes twinkle{
+
+    50%{
+        opacity:.35;
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes shake{
+
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-8px);}
+    50%{transform:translateX(8px);}
+    75%{transform:translateX(-8px);}
+    100%{transform:translateX(0);}
+
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width:480px){
+
+    .opening-box h1{
+        font-size:42px;
+    }
+
+    .container h1{
+        font-size:48px;
+    }
+
+    .gallery img{
+        width:180px;
+        height:240px;
+    }
+
+    .envelope{
+        width:180px;
+        height:120px;
+    }
+
+    button{
+        font-size:15px;
+        padding:14px 28px;
+    }
+
+}
+
+/* ================= Cursor ================= */
+
+.cursor{
+
+    display:inline-block;
+
+    animation:cursorBlink .8s infinite;
+
+    color:#6b1d2c;
+
+    font-weight:bold;
+
+}
+
+@keyframes cursorBlink{
+
+    0%,50%{
+
+        opacity:1;
+
+    }
+
+    51%,100%{
+
+        opacity:0;
+
+    }
+
+}
+
+#voiceSection{
+
+    margin-top:70px;
+
+    text-align:center;
+
+    animation:fadeUp 1s;
+
+}
+
+.voiceText{
+
+    margin:25px auto;
+
+    max-width:550px;
+
+    line-height:2;
+
+}
+
+.qr{
+
+    width:230px;
+
+    background:white;
+
+    padding:14px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.qr:hover{
+
+    transform:scale(1.05);
+
+}
+
+.scanText{
+
+    margin-top:18px;
+
+    opacity:.8;
+
+    animation:blink 1.5s infinite;
+
+}
+
+/* ================= Countdown Screen ================= */
+
+#countdownScreen{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    z-index:99999;
+
+    background:inherit;
+
+/* ================= Voice Note ================= */
+
+#voiceSection{
+    width:100%;
+    margin:50px 0;
+    padding:0;
+    text-align:center;
+}
+
+.voice-box{
+    width:90%;
+    max-width:500px;
+    margin:0 auto;
+    padding:25px 20px;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.voice-box h2{
+    margin:0 0 25px;
+    line-height:1.5;
+}
+
+.voice-box p{
+    margin:15px auto;
+    line-height:1.8;
+}
+
+.voice-box audio{
+    display:block;
+    width:100%;
+    margin:30px auto;
+}}
+
+/* ================= Question Button ================= */
+
+#rememberBtn{
+    margin-top:25px;
+    padding:12px 24px;
+    border:none;
+    border-radius:30px;
+    background:#fff;
+    color:#6b1d2c;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+    transition:.3s ease;
+}
+
+#rememberBtn:hover{
+    transform:scale(1.05);
+}
+
+#rememberBtn:active{
+    transform:scale(.95);
+}
+
+/* ================= Quiz Screen ================= */
+
+#quizScreen{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.quiz-content{
+    width:100%;
+    max-width:400px;
+}
+
+.quiz-content h2{
+    margin-bottom:15px;
+}
+
+.quiz-content p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.quiz-options{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:25px;
+}
+
+.dateOption{
+    padding:13px 20px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    color:#6b1d2c;
+    font-size:15px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.dateOption:active{
+    transform:scale(.95);
+}
+
+#quizMessage{
+    margin-top:20px;
+    font-weight:bold;
+      }
